@@ -44,6 +44,7 @@ namespace rpg
       this.btn_confirm = new System.Windows.Forms.Button();
       this.btn_roll = new System.Windows.Forms.Button();
       this.btn_reset = new System.Windows.Forms.Button();
+      this.listBox1 = new System.Windows.Forms.ListBox();
       this.SuspendLayout();
       // 
       // label1
@@ -173,11 +174,21 @@ namespace rpg
       this.btn_reset.UseVisualStyleBackColor = true;
       this.btn_reset.Click += new System.EventHandler(this.button3_Click);
       // 
+      // listBox1
+      // 
+      this.listBox1.FormattingEnabled = true;
+      this.listBox1.Location = new System.Drawing.Point(556, 84);
+      this.listBox1.Name = "listBox1";
+      this.listBox1.Size = new System.Drawing.Size(232, 121);
+      this.listBox1.TabIndex = 15;
+      this.listBox1.Visible = false;
+      // 
       // Form1
       // 
       this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
       this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
       this.ClientSize = new System.Drawing.Size(800, 450);
+      this.Controls.Add(this.listBox1);
       this.Controls.Add(this.btn_reset);
       this.Controls.Add(this.btn_roll);
       this.Controls.Add(this.btn_confirm);
@@ -217,6 +228,7 @@ namespace rpg
     private System.Windows.Forms.Button btn_confirm;
     private System.Windows.Forms.Button btn_roll;
     private System.Windows.Forms.Button btn_reset;
+    private System.Windows.Forms.ListBox listBox1;
   }
 }
 
